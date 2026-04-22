@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+  build:
+    commands:
+      - echo "Ejecutando pruebas"
+      - pip install flask
+  post_build:
+    commands:
+      - echo "Construcción finalizada con éxito"
+artifacts:
+  files:
+    - '**/*'
